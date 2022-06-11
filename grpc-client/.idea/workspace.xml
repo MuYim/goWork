@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a49d0858-69ac-4db5-a4dd-e442a356e07e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../gin-demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gin-demo/.idea/gin-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gin-demo/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gin-demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/grpc-client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/Prod.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/Prod_grpc.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc-server/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc-server/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc-server/.idea/grpc-server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc-server/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc-server/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc-server/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc-server/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc-server/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc-server/pdfiles/Prod.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc-server/services/Prod.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc-server/services/ProdService.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc-server/services/Prod_grpc.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gin-demo/dao/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gin-demo/dao/mysql.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../Program Files/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2A9WtoND945ZzGkgsETU7tOli6q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/services" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\goWork\grpc-client\services" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://goproxy.cn" />
+      </map>
+    </environment>
+  </component>
+</project>
