@@ -15,10 +15,26 @@ import (
 
 func Register(context *gin.Context) {
 	DB := common.GetDB()
-	//获取参数
-	name := context.PostForm("name")
-	telephone := context.PostForm("telephone")
-	password := context.PostForm("password")
+	//获取参数(不能获取到通过json传的数据)
+	//name := context.PostForm("name")
+	//telephone := context.PostForm("telephone")
+	//password := context.PostForm("password")
+
+	//使用map获取请求参数
+	//var requestMap=make(map[string]string)
+	//json.NewDecoder(context.Request.Body).Decode(&requestMap)
+
+	//使用结构体接收请求参数
+	//var requestUser = model.User{}
+	//json.NewDecoder(context.Request.Body).Decode(&requestUser)
+
+	//gin的BInd获取参数(参数必须使用json传递)
+	var requestUser = model.User{}
+	context.Bind(&requestUser)
+
+	name := requestUser.Name
+	telephone := requestUser.Telephone
+	password := requestUser.Password
 	//数据验证
 	if len(telephone) != 11 {
 		response.Response(context, http.StatusUnprocessableEntity, 422, nil, "手机号必须为11位")
@@ -53,15 +69,28 @@ func Register(context *gin.Context) {
 	//坑1:必须传指针，因为要修改newUser的值，不传指针是值传递，无法修改最后使用的newUser，导致gorm.Model没有赋值，最终导致数据插入失败
 	//db.Create(newUser)
 	DB.Create(&newUser)
+
 	//返回结果
-	response.Success(context, nil, "注册成功")
+	//response.Success(context, nil, "注册成功")
+
+	//注册成功直接登录，不需用户在进行手动登录---发放token
+	token, err := common.ReleaseToken(newUser)
+	if err != nil {
+		response.Response(context, http.StatusInternalServerError, 500, nil, "系统异常")
+		log.Printf("token generate error : %v", err)
+		return
+	}
+	//返回结果
+	response.Success(context, gin.H{"token": token}, "注册成功")
 }
 
 func Login(ctx *gin.Context) {
 	DB := common.GetDB()
 	//获取参数
-	telephone := ctx.PostForm("telephone")
-	password := ctx.PostForm("password")
+	var requestUser = model.User{}
+	ctx.Bind(&requestUser)
+	telephone := requestUser.Telephone
+	password := requestUser.Password
 	//数据验证
 	if len(telephone) != 11 {
 		response.Response(ctx, http.StatusUnprocessableEntity, 422, nil, "手机号必须为11位")
